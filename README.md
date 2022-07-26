@@ -9,7 +9,7 @@
 ## CARA INSTALL MLFLOW BACKEND SERVER
 1. Buka Anaconda Prompt:
 
-![alt text](https://github.com/randi-source/pengenalan_mlops_dengan_mlflow/blob/main/Picture/image.png)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/image.png)
 
 2. Buat anaconda environment baru beserta beberapa dependensi library:
 ```console
@@ -108,7 +108,7 @@ mlflow server --backend-store-uri postgresql://mlflow_user:mlflow_user@localhost
 
     http://localhost:8001
 
-![alt text](https://github.com/randi-source/pengenalan_mlops_dengan_mlflow/blob/main/Picture/Screenshot%202022-07-24%20012430.jpeg)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/Screenshot%202022-07-24%20012430.jpeg)
 
 #### Note:
 
@@ -140,21 +140,13 @@ mlflow.set_experiment("sklearn_elastic_wine")
 
 27. Pastikan kernel yang digunakan adalah mlflow_env:
 
-![alt text](https://github.com/randi-source/pengenalan_mlops_dengan_mlflow/blob/main/Picture/Untitled.jpg)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/Untitled.jpg)
 
 28. Jalankan Script
 
 29. Buka MLflow ui pada browser: 
   
     http://localhost:8001
-
-30. Install library yang dibutuhkan:
-```python
-pip install pyspark==3.3.0 findspark
-```
-
-
-set MLFLOW_TRACKING_URI=http://localhost:8001 && mlflow models serve -m file:///mlflow/mlruns/3/1e675be17b274b0a8ccc94e3de511990/artifacts/model -h localhost -p 8002 --no-conda
 
 
 ### Sumber: 
