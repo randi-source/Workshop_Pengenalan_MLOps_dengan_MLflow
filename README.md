@@ -9,7 +9,7 @@
 ## CARA INSTALL MLFLOW BACKEND SERVER
 1. Buka Anaconda Prompt:
 
-![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/anaconda_prompt.jpeg)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/anaconda_prompt.jpg)
 
 2. Buat anaconda environment baru beserta beberapa dependensi library:
 ```console
