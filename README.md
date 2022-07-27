@@ -9,7 +9,7 @@
 ## CARA INSTALL MLFLOW BACKEND SERVER
 1. Buka Anaconda Prompt:
 
-![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/image.png)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/anaconda_prompt.png)
 
 2. Buat anaconda environment baru beserta beberapa dependensi library:
 ```console
@@ -108,7 +108,7 @@ mlflow server --backend-store-uri postgresql://mlflow_user:mlflow_user@localhost
 
     http://localhost:8001
 
-![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/Screenshot%202022-07-24%20012430.jpeg)
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/mlflow_ui.jpeg)
 
 #### Note:
 
@@ -124,27 +124,21 @@ Ctrl+Shift+P
 
 23. Copy paste Github URL kedalam command pallete untuk pull remote repository pengenalan_mlops_dengan_mlflow ke local repository:
   
-    https://github.com/randi-source/pengenalan_mlops_dengan_mlflow.git
+    https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow.git
 
 24. Setelah pull repository berhasil, buka repository dan buka train.py dalam folder sklearn_elasticnet_wine. Contoh kasus diambil dari link berikut:
   
     https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
 
-25. Buka file train.ipynb pada folder sklearn_elasticnet_wine
+25. Buka file customer_segmentation_kmeans.ipynb 
 
-26. Hubungkan python dengan mlflow dengan menambahkan script berikut:
-```python
-mlflow.set_tracking_uri("http://localhost:8001/")
-mlflow.set_experiment("sklearn_elastic_wine")
-```
+26. Pastikan kernel yang digunakan adalah mlflow_env:
 
-27. Pastikan kernel yang digunakan adalah mlflow_env:
+![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/mlflow_env_kernel.png)
 
-![alt text](https://github.com/randi-source/Workshop_Pengenalan_MLOps_dengan_MLflow/blob/main/Picture/Untitled.jpg)
+27. Jalankan Script
 
-28. Jalankan Script
-
-29. Buka MLflow ui pada browser: 
+28. Buka MLflow ui pada browser: 
   
     http://localhost:8001
 
