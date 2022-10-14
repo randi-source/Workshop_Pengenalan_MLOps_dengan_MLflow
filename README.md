@@ -50,7 +50,7 @@ CREATE DATABASE mlflow_db;
 CREATE USER mlflow_user WITH ENCRYPTED PASSWORD 'mlflow_user';
 ```
 ```psql
-GRANT ALL PRIVILEDGES ON DATABASE mlflow_database TO mlflow_user;
+GRANT ALL PRIVILEGES ON DATABASE mlflow_db TO mlflow_user;
 ```
 10. Cek User:
 ```psql
