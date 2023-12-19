@@ -98,6 +98,17 @@ md mlflow\mlruns
 ```console
 pg_ctl -D "D:/postgresql" -l logfile start
 ```
+Jika terdapat error seperti ini
+```console
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+```
+maka lakukan stop postgresql db terlebih dahulu dengan menjalankan
+```console
+pg_ctl -D "<path PostgreSQL>" stop
+```
 
 19. Menjalankan MLflow Tracking Server. Guna menjalankan, gunakan perintah mlflow server yang diikuti dengan PostgreSQL melalui --backend-store-uri dengan argumen <dialec><driver>://<username><password>@<host>:<post>/<database> , kemudian diikuti oleh perintah --defaut-artifact-root yang diikuti oleh path dimana kita membuat directory mlruns sebelumnya, contoh:
 ```console
