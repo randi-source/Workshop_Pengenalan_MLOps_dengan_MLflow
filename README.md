@@ -68,7 +68,7 @@ GRANT ALL PRIVILEGES ON DATABASE mlflow_db TO mlflow_user;
 
 13. Database yang baru saja kita buat akan memiliki data terkait dengan model yang sudah di register. Konten tersebut dapat dilihat dengan perintah:
 ```psql
-psql --dbname mlflow_database
+psql --dbname mlflow_db
 ```
 
 14. Cek tabel yang telah dibuat MLflow:
